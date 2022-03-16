@@ -72,6 +72,7 @@ public class TestEcomm {
 	//nw i have to fetch the id
 	accessToken = js.get("accessToken");
 	System.out.println(accessToken);
+	System.out.println("Anything");
 	}
 	
 	
