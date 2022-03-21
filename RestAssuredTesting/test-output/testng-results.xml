@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-16T14:35:56Z" name="Default suite" finished-at="2022-03-16T14:36:07Z" duration-ms="11193">
+  <suite name="Default suite" duration-ms="16089" started-at="2022-03-19T12:24:57Z" finished-at="2022-03-19T12:25:13Z">
     <groups>
     </groups>
-    <test started-at="2022-03-16T14:35:56Z" name="Default test" finished-at="2022-03-16T14:36:07Z" duration-ms="11193">
-      <class name="RestTesting.TestEcomm">
-        <test-method signature="signup()[pri:0, instance:RestTesting.TestEcomm@68f4865]" started-at="2022-03-16T20:05:56Z" name="signup" finished-at="2022-03-16T20:06:03Z" duration-ms="7071" status="PASS">
+    <test name="Default test" duration-ms="16089" started-at="2022-03-19T12:24:57Z" finished-at="2022-03-19T12:25:13Z">
+      <class name="RestTesting.Example">
+        <test-method status="PASS" signature="signup()[pri:0, instance:RestTesting.Example@6ee12bac]" name="signup" duration-ms="6691" started-at="2022-03-19T17:54:57Z" finished-at="2022-03-19T17:55:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup -->
-        <test-method signature="Login()[pri:1, instance:RestTesting.TestEcomm@68f4865]" started-at="2022-03-16T20:06:03Z" name="Login" finished-at="2022-03-16T20:06:07Z" duration-ms="4100" status="PASS">
+        <test-method status="PASS" signature="login()[pri:1, instance:RestTesting.Example@6ee12bac]" name="login" duration-ms="4090" started-at="2022-03-19T17:55:04Z" depends-on-methods="RestTesting.Example.signup" finished-at="2022-03-19T17:55:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- RestTesting.TestEcomm -->
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="getusers()[pri:2, instance:RestTesting.Example@6ee12bac]" name="getusers" duration-ms="3309" started-at="2022-03-19T17:55:08Z" depends-on-methods="RestTesting.Example.login" finished-at="2022-03-19T17:55:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getusers -->
+        <test-method status="PASS" signature="deleteuser()[pri:3, instance:RestTesting.Example@6ee12bac]" name="deleteuser" duration-ms="1979" started-at="2022-03-19T17:55:11Z" depends-on-methods="RestTesting.Example.login" finished-at="2022-03-19T17:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteuser -->
+      </class> <!-- RestTesting.Example -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
